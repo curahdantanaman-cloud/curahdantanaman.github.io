@@ -1,0 +1,11 @@
+body { margin: 0; font-family: Arial; background: #eef5ff; }
+header { background: #007bff; padding: 20px; color: white; text-align: center; }
+nav { display: flex; gap: 20px; justify-content: center; padding: 10px; background: white; }
+nav a { text-decoration: none; font-weight: bold; color: #007bff; }
+nav .active { color: black; }
+.hero { text-align: center; margin: 20px; }
+.img-placeholder {
+    width: 90%; height: 200px; background: #dce6f8; border: 2px dashed #7aa7ff;
+    margin: auto; display: flex; justify-content: center; align-items: center;
+    border-radius: 10px;
+}
