@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Entri Curah Hujan</title>
+    <link rel="stylesheet" href="css/curah.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Entri Data Curah Hujan</h1>
+
+        <form id="rainForm">
+            <label>Tanggal:</label>
+            <input type="date" id="tanggal" required>
+
+            <label>Pukul Mulai:</label>
+            <input type="time" id="mulai" required>
+
+            <label>Pukul Selesai:</label>
+            <input type="time" id="selesai" required>
+
+            <label>Curah Hujan (mm):</label>
+            <input type="number" id="mm" placeholder="contoh: 25" required>
+
+            <button type="submit" class="btn">Tambah Data</button>
+        </form>
+
+        <button id="downloadBtn" class="btn download">Download CSV</button>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Tanggal</th>
+                    <th>Mulai</th>
+                    <th>Selesai</th>
+                    <th>Curah Hujan (mm)</th>
+                    <th>Kategori</th>
+                </tr>
+            </thead>
+            <tbody id="rainTable"></tbody>
+        </table>
+    </div>
+
+    <script src="js/curah.js"></script>
+</body>
+</html>
